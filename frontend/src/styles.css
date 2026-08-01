@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: #f5f6f8;
+  color: #1a1a1a;
+}
+
+/* ---------- Login ---------- */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 360px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.login-card h1 {
+  font-size: 20px;
+  margin: 0 0 24px;
+  text-align: center;
+}
+
+.login-card label {
+  display: block;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: #1a73e8;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-card button:disabled {
+  background: #9bbdf0;
+  cursor: not-allowed;
+}
+
+.error-text {
+  color: #d93025;
+  font-size: 13px;
+  margin: -8px 0 16px;
+}
+
+/* ---------- 404 / gate / blocked (decoy GitHub Pages page) ---------- */
+
+/* Values below are copied verbatim from a live GitHub Pages 404 response
+   so this decoy renders pixel-identical to the real thing. */
+
+.notfound {
+  background-color: #f1f1f1;
+  min-height: 100vh;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.notfound-inner {
+  margin: 50px auto 40px auto;
+  width: 600px;
+  text-align: center;
+}
+
+.notfound a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.notfound a:hover {
+  text-decoration: underline;
+}
+
+.notfound h1 {
+  width: 800px;
+  position: relative;
+  left: -100px;
+  letter-spacing: -1px;
+  line-height: 60px;
+  font-size: 60px;
+  font-weight: 100;
+  margin: 0 0 50px 0;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.notfound p {
+  color: rgba(0, 0, 0, 0.5);
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.notfound-status {
+  margin-top: 35px;
+  color: #ccc;
+}
+
+.notfound-status a {
+  color: #666;
+  font-weight: 200;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+/* Deliberately left unstyled so it selects, wraps, and reads exactly like
+   the surrounding text — no color, cursor, or selection difference that
+   would give away that it's clickable. */
+.notfound-trigger {
+  color: inherit;
+}
+
+.notfound-logo {
+  display: inline-block;
+  margin-top: 35px;
+}
+
+.notfound-logo-2x {
+  display: none;
+}
+
+@media only screen and (min-resolution: 2dppx) {
+  .notfound-logo-1x {
+    display: none;
+  }
+  .notfound-logo-2x {
+    display: inline-block;
+  }
+}
+
+/* ---------- Message board ---------- */
+
+.board-page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+}
+
+.board-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.board-header h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #1a73e8;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+}
+
+.post-form {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.post-form textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.post-form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.post-form-actions button {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.post-form-actions button[type='submit'] {
+  color: #fff;
+  background: #1a73e8;
+}
+
+.post-form-actions button[type='submit']:disabled {
+  background: #9bbdf0;
+  cursor: not-allowed;
+}
+
+.post-form-actions .danger {
+  color: #d93025;
+  background: #fce8e6;
+}
+
+.message-list {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 4px 16px;
+}
+
+.message-item {
+  padding: 14px 0;
+}
+
+.message-timestamp {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.message-text {
+  font-size: 15px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.message-list hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 0;
+}
+
+.empty-state {
+  color: #888;
+  text-align: center;
+  padding: 24px 0;
+}

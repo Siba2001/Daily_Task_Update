@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+      GitHub Pages doesn't let us set real Cache-Control response headers.
+      Without this, a browser can hold onto a stale copy of this HTML file
+      after a redeploy, still pointing at hashed asset filenames the new
+      build removed — those 404, and the page renders unstyled until a
+      hard refresh. These meta tags stop the document itself from being
+      cached, while the hashed /assets/*.js /*.css files it references are
+      still safe to cache indefinitely (their filename changes whenever
+      their content does).
+    -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Site not found · GitHub Pages</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
